@@ -23,7 +23,7 @@ Here is a short example of using the package.
     
 ## The Dataset
 
-<img src="imgur.com/oxs9nKW"><img/>
+<img src="imgur.com/oxs9nKW"/>
 
 The dataset contains images of dogs and cats. They are 128x128 and are sRGB.
 The train dataset has 10,000 dogs and 10,000 cats.
