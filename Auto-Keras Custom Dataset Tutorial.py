@@ -38,15 +38,9 @@ clf.final_fit(x_train,y_train,x_val,y_val,retrain = True, trainer_args={'max_ite
 
 
 # Evaluating the Model
-
-
 print(clf.evaluate(x_val,y_val))
 
-
 # Loading the Best Model Found
-
-
-
 best = clf.load_searcher().load_best_model()
 best_torchModel = best.produce_model()
 best_kerasModel = best.produce_keras_model()
@@ -55,8 +49,7 @@ print(best.n_layers)
 print(best_torchModel)
 print(best_kerasModel)
 
-
-# ## Saving the Model to be used in other Projects
+# Saving the Model to be used in other Projects
 import torch
 torch.save(best.produce_model(),'dogsAndCats_model.pt')
 loadedTorchModel = torch.load('dogsAndCats_model.pt')
@@ -65,7 +58,7 @@ from keras.models import load_model
 best_kerasModel.save('dogsAndCats_model.h5')
 loadedKerasModel = load_model('dogsAndCats_model.h5')
 
-# ## Sanity Check by Visualizing the Model Predictions
+# Sanity Check by Visualizing the Model Predictions
 import torchvision
 from torchvision import datasets, models, transforms
 import numpy as np
