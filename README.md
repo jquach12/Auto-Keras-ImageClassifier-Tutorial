@@ -23,6 +23,8 @@ Here is a short example of using the package.
     
 ## The Dataset
 
+<img src="https://imgur.com/a/GLeHnL4">
+
 The dataset contains images of dogs and cats. They are 128x128 and are sRGB.
 The train dataset has 10,000 dogs and 10,000 cats.
 The validation dataset has 2000 dogs and 2000 cats.
