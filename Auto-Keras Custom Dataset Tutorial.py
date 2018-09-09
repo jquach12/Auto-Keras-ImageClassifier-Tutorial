@@ -1,6 +1,6 @@
 # coding: utf-8
 
-# # Auto-Keras, the Open Source Neural Architecture Search 
+# Auto-Keras, the Open Source Neural Architecture Search 
 # Website: https://autokeras.com/ Citation: arXiv:1806.10282 Paper: https://arxiv.org/abs/1806.10282
 # (Version 0.2.13 as of 9/8/18)
 
@@ -27,15 +27,12 @@ x_val, y_val = load_image_dataset(csv_file_path=validation_labels,images_path=va
 print(x_val.shape)
 print(y_val.shape)
 
-
 # Searching for the Best Model
 clf = ImageClassifier(verbose = True, searcher_args = {'trainer_args':{'max_iter_num': 25}})
 clf.fit(x_train,y_train, time_limit = 4 * 60 * 60) # default time_limit is 24 hours 
 
-
 # Fitting the Best Model Found During Search
 clf.final_fit(x_train,y_train,x_val,y_val,retrain = True, trainer_args={'max_iter_num':10})
-
 
 # Evaluating the Model
 print(clf.evaluate(x_val,y_val))
@@ -123,7 +120,6 @@ def visualize_model(model, num_images=10):
                     model.train(mode=was_training)
                     return
         model.train(mode=was_training)
-
 
 loadedTorchModel = loadedTorchModel.to(device) # allows model to use GPU
 visualize_model(loadedTorchModel,4)
