@@ -23,7 +23,7 @@ Here is a short example of using the package.
     
 ## The Dataset
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="oxs9nKW"><a href="//imgur.com/oxs9nKW">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<img src="imgur.com/oxs9nKW"><img/>
 
 The dataset contains images of dogs and cats. They are 128x128 and are sRGB.
 The train dataset has 10,000 dogs and 10,000 cats.
