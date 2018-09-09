@@ -30,4 +30,6 @@ The train dataset has 10,000 dogs and 10,000 cats.
 The validation dataset has 2000 dogs and 2000 cats.
 The test dataset has 21 cats and 11 dogs.
 
-A walkthrough of this can be found by viewing here: [![](http://img.youtube.com/vi/veWfGSZSzmE/0.jpg)](http://www.youtube.com/watch?v=veWfGSZSzmE "")
+A walkthrough of this can be found by viewing here: 
+
+[![](http://img.youtube.com/vi/veWfGSZSzmE/0.jpg)](http://www.youtube.com/watch?v=veWfGSZSzmE "")
